@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import hello from "./components/HelloWorld.vue";
 import carousal from "./components/carousal.vue";
 import headbar from "./components/headbar.vue";
 import highlights from "./components/highlights.vue"
@@ -17,7 +16,6 @@ import highlights from "./components/highlights.vue"
 export default {
   name: "app",
   components: {
-    hello,
     headbar,
     carousal,
     highlights
@@ -37,7 +35,9 @@ export default {
 *{
   box-sizing: border-box;
 }
-
+headbar{
+  height: 100px;
+}
 .body {
   /* background-color: blue; */
   margin-top: 2ch;
