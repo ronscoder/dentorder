@@ -1,28 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <headbar></headbar>
+    <div class="body">
+      <carousal></carousal>
+      <highlights></highlights>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import hello from "./components/HelloWorld.vue";
+import carousal from "./components/carousal.vue";
+import headbar from "./components/headbar.vue";
+import highlights from "./components/highlights.vue"
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    hello,
+    headbar,
+    carousal,
+    highlights
   }
-}
+};
 </script>
 
 <style>
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+*{
+  box-sizing: border-box;
+}
+
+.body {
+  /* background-color: blue; */
+  margin-top: 2ch;
+  /* display: flex;
+  flex-direction: column; */
+}
+
 </style>
